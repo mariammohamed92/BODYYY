@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>محاضرات المعلمة نرمين الشرقاوي</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Menna Elad">
+        <meta name="keywords" content="Login Form">
+        <meta name="description" content="login Form">
+        <link rel="icon" href="image/welcome.jpg">
+        <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class=" container-fluid text-center">
+            <img src="./image/Screenshot (85).png" class=" iimg">
+            <span class="contact p-3 fw-bolder fa-2xl rounded-5  ">  <a href="index.html">تسجيل خروج</a></span>
+            <div class=" box mx-md-auto text-md-center my-md-4 py-md-4">
+
+                <h2 class="Marker w-75  text-white text-center pt-md-5 fw-bolder ">محاضرات المعلمه نرمين الشرقاوي </h2>
+        
+            <div class="container w-75 ">
+            <div class=" BOOKS h-50">
+                    <form class="form w-100 p-md-5 me-md-3 ms-md-3" action="#">
+                     <div class=" form-group  mb-md-3 d-flex align-items-center flex-column">
+                    <label for="productName" class="fw-bolder mb-md-3 text-white">إسم المحاضرة</label>
+                    <input name="productName" type="text" id="productName" onkeyup="validateProductName()"  placeholder="" class=" border rounded-2 w-75">
+                </div>
+            <div class="input-field mb-md-3 d-flex align-items-center flex-column">
+                    <label for="url" class=" fw-bolder mb-md-3  text-white ">لينك المحاضرة</label>
+                    <input name="url" type="url" id="url" placeholder=" " class=" border rounded-2 w-75" >
+                    <p class="text-danger d-none" id="url-validation" onkeyup="validateurl()">Please enter Valid URL</p>
+                </div>
+                <button class="save_button " onclick="addProduct()" id="mainBtn" >تسجيل </button>
+        </form>
+        <div class=" pt-md-3 bookmarks ">
+            <table class=" table  ">
+                <tbody id="productData" class="Progg">
+                   
+                </tbody>
+            </table>
+        </div>
+            </div>
+            </div>
+        </div>
+        
+        </div>
+        
+
+                
+                <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+
+</html>
+
+
+
+
+
